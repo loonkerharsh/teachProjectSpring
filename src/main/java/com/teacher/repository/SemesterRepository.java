@@ -1,3 +1,4 @@
+// SemesterRepository.java
 package com.teacher.repository;
 
 import com.teacher.model.Semester;

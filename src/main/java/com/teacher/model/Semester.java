@@ -1,21 +1,24 @@
+// Semester.java
 package com.teacher.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "semesters")
 public class Semester {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id; // Match INT type in MySQL
-    
+ 
+    private int id;
     private String name;
     
     @JsonIgnore
     @ManyToMany(mappedBy = "semesters")
-    private Set<User> teachers;
+    private Set<User> teachers = new HashSet<>();
 
     // Getters and Setters
     public Integer getId() { return id; }
