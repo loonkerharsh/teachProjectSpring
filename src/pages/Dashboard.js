@@ -17,8 +17,8 @@ function Dashboard() {
         <h1 style={{ margin: 0 }}>Teacher Portal</h1>
         <div style={{ display: 'flex', gap: '20px' }}>
           <Link to="/semesters" style={{ color: 'white', textDecoration: 'none' }}>Semesters</Link>
-          <Link to="/profile" style={{ color: 'white', textDecoration: 'none' }}>Profile</Link>
-          <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>Logout</Link>
+          <Link to={"/profile"} style={{ color: 'white', textDecoration: 'none' }}>Profile</Link>
+          <Link to="/logout" style={{ color: 'white', textDecoration: 'none' }}>Logout</Link>
         </div>
       </nav>
 

@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Semesters from './pages/Semesters';
 import Subjects from './pages/Subjects';
 import AddSemester from './pages/AddSemester';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/semesters" element={<Semesters />} />
         <Route path="/semesters/:semesterId/subjects" element={<Subjects />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/semesters/new" element={<AddSemester />} />
       </Routes>
     </Router>
