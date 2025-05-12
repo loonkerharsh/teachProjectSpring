@@ -3,6 +3,9 @@ package com.teacher.controller;
 import com.teacher.model.LoginRequest;
 import com.teacher.model.User;
 import com.teacher.repository.UserRepository;
+
+import jakarta.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,4 +40,6 @@ public class LoginController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
         }
     }
+    
+    
 }

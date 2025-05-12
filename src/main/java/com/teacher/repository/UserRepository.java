@@ -7,4 +7,6 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findById(Long id); // Should already exist via JpaRepository
     User findByUsername(String username);
+    long countByRole(String role);
+    boolean existsByUsername(String username);
 }
